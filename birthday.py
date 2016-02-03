@@ -34,20 +34,32 @@ Example Session
 from datetime import datetime
 from calendar import month_name
 todaymonth = datetime.today().month
+#hastag
 todaydate = datetime.today().day
 monthtoday = month_name[todaymonth]
 name = input("Hello, what is your name?")
-h= "Hi " 
-month =", what was the name of the month you were born in?"
-b=input(h+name+n)
+Hi= "Hi " 
+n =", what was the name of the month you were born in?"
+month=input(Hi+name+n)
 c = "And what year were you born in, "
 d= "?"
 #whatevs
-e=input(c+name+d)
-day=int(input("And the day?"))
+year=int(input(c+name+d))
+day =int(input("And the day?"))
 if day==todaydate and monthtoday==month:
     print("Happy birthday!")
-else:
-    if day==31 and month="October"
-    print("you were born on Halloween")
-    
+if month=="December" or month=="January" or month=="February":
+    season="winter"
+if day==31 and month=="October":
+    print("You were born on Halloween!")
+if year<1980:
+    era="Stone Age"
+if year>1979 and year<1990:
+    era="eighties"
+if year>1989 and year<2000:
+    era="nineties"
+if year>1999 and year<2017:
+    era="two thousands"
+if year>2016:
+    era="the future"
+print(era+season)
