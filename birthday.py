@@ -46,20 +46,30 @@ d= "?"
 #whatevs
 year=int(input(c+name+d))
 day =int(input("And the day?"))
-if day==todaydate and monthtoday==month:
-    print("Happy birthday!")
 if month=="December" or month=="January" or month=="February":
     season="winter"
-if day==31 and month=="October":
-    print("You were born on Halloween!")
+if month=="March" or month=="April" or month=="May":
+    season="spring"
+if month=="June" or month=="July" or month=="August":
+    season="summer"
+if month=="September" or month=="October" or month=="November":
+    season="fall"
 if year<1980:
-    era="Stone Age"
+    era="Stone Age."
 if year>1979 and year<1990:
-    era="eighties"
+    era="eighties."
 if year>1989 and year<2000:
-    era="nineties"
+    era="nineties."
 if year>1999 and year<2017:
-    era="two thousands"
+    era="two thousands."
 if year>2016:
-    era="the future"
-print(era+season)
+    era="the future."
+text=", you are a "
+baby=" baby of the "
+if day==todaydate and monthtoday==month:
+    print("Happy birthday!")
+else:
+    if day==31 and month=="October":
+        print("You were born on Halloween!")
+    else:
+        print(name+text+season+baby+era)
