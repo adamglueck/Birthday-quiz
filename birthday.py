@@ -45,7 +45,7 @@ c = "And what year were you born in, "
 d= "? "
 #whatevs
 year=int(input(c+name+d))
-day =int(input("And the day?" ))
+day =int(input("And the day? "))
 if month=="December" or month=="January" or month=="February":
     season="winter"
 if month=="March" or month=="April" or month=="May":
