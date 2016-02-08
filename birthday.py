@@ -37,15 +37,15 @@ todaymonth = datetime.today().month
 #hastag
 todaydate = datetime.today().day
 monthtoday = month_name[todaymonth]
-name = input("Hello, what is your name?")
-Hi= "Hi " 
-n =", what was the name of the month you were born in?"
+name = input("Hello, what is your name? ")
+Hi= " Hi " 
+n =", what was the name of the month you were born in? "
 month=input(Hi+name+n)
 c = "And what year were you born in, "
-d= "?"
+d= "? "
 #whatevs
 year=int(input(c+name+d))
-day =int(input("And the day?"))
+day =int(input("And the day?" ))
 if month=="December" or month=="January" or month=="February":
     season="winter"
 if month=="March" or month=="April" or month=="May":
@@ -55,7 +55,7 @@ if month=="June" or month=="July" or month=="August":
 if month=="September" or month=="October" or month=="November":
     season="fall"
 if year<1980:
-    era="stone age."
+    era="Stone Age."
 if year>1979 and year<1990:
     era="eighties."
 if year>1989 and year<2000:
