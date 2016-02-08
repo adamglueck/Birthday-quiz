@@ -55,7 +55,7 @@ if month=="June" or month=="July" or month=="August":
 if month=="September" or month=="October" or month=="November":
     season="fall"
 if year<1980:
-    era="Stone Age."
+    era="stone age."
 if year>1979 and year<1990:
     era="eighties."
 if year>1989 and year<2000:
